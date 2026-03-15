@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Privacy Policy – TestGenerator</title>
+  <style>
+    body { font-family: system-ui, -apple-system, sans-serif; line-height: 1.6; max-width: 720px; margin: 0 auto; padding: 24px; color: #1a1a2e; }
+    h1 { font-size: 1.5rem; margin-top: 0; }
+    h2 { font-size: 1.1rem; margin-top: 1.5em; }
+    p { margin: 0.5em 0; }
+    ul { margin: 0.5em 0; padding-left: 1.5em; }
+    .updated { color: #64748b; font-size: 0.9rem; }
+    .back { margin-bottom: 16px; }
+    .back a { color: #2563eb; }
+  </style>
+</head>
+<body>
+  <p class="back"><a href="index.html">← TestGenerator</a></p>
+  <h1>Privacy Policy – TestGenerator</h1>
+  <p class="updated">Last updated: March 2025</p>
+
+  <p>This privacy policy applies to the <strong>TestGenerator</strong> Chrome extension (“the extension”).</p>
+
+  <h2>1. What the extension does</h2>
+  <p>TestGenerator captures network requests (fetch and XMLHttpRequest) on the browser tab you choose and generates test code (Playwright, Cypress, Postman, or REST-assured) from those requests. It is intended for developers and QA engineers.</p>
+
+  <h2>2. What data is used</h2>
+  <p>When you click “Start capture,” the extension may record, only for the tab you selected:</p>
+  <ul>
+    <li>Request URL</li>
+    <li>HTTP method (e.g. GET, POST)</li>
+    <li>Request headers</li>
+    <li>Request body (if any)</li>
+  </ul>
+  <p>This is the data needed to generate the test files. The extension also stores locally whether capture is on or off and the list of captured requests until you clear it or close the browser.</p>
+
+  <h2>3. Where data is stored</h2>
+  <p>All of the data above is stored <strong>only on your device</strong> using Chrome’s local storage (e.g. <code>chrome.storage.local</code>). Nothing is sent to our servers or any third party.</p>
+
+  <h2>4. Data sharing and transfer</h2>
+  <p>We do <strong>not</strong>:</p>
+  <ul>
+    <li>Sell, rent, or share your data with third parties</li>
+    <li>Send captured requests or generated tests to any remote server</li>
+    <li>Use your data for advertising, analytics, or credit/lending purposes</li>
+  </ul>
+
+  <h2>5. Your control</h2>
+  <p>You decide when to start and stop capture. You can clear the list of captured requests at any time using the “Clear” button in the extension. No data is collected in the background without your action.</p>
+
+  <h2>6. Permissions</h2>
+  <p>The extension requests:</p>
+  <ul>
+    <li><strong>activeTab</strong> – to run only in the tab you choose when you click “Start capture.”</li>
+    <li><strong>Host permissions (e.g. access to sites)</strong> – so it can inject a script into the tab you select to record API calls. It does not access sites in the background.</li>
+    <li><strong>scripting</strong> – to inject the capture script only when you click “Start capture” in the active tab.</li>
+    <li><strong>storage</strong> – to keep the list of captured requests and capture state on your device only.</li>
+  </ul>
+
+  <h2>7. Changes</h2>
+  <p>We may update this policy from time to time. The “Last updated” date at the top will be revised when we do. Continued use of the extension after changes means you accept the updated policy.</p>
+
+  <h2>8. Contact</h2>
+  <p>If you have questions about this privacy policy or the extension, use the contact email provided in the Chrome Web Store listing for TestGenerator.</p>
+</body>
+</html>
