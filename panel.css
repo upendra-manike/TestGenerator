@@ -1,0 +1,19 @@
+.panel {
+  padding: 16px;
+  font-family: system-ui, -apple-system, sans-serif;
+}
+.panel h1 {
+  margin: 0 0 8px 0;
+  font-size: 18px;
+}
+.panel .subtitle {
+  margin: 0 0 16px 0;
+  color: #666;
+  font-size: 13px;
+}
+.panel .info {
+  background: #f0f4f8;
+  padding: 12px;
+  border-radius: 8px;
+  font-size: 13px;
+}

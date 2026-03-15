@@ -1,0 +1,25 @@
+{
+  "name": "test-generator",
+  "version": "1.0.0",
+  "description": "Chrome extension: capture browser API calls and generate Playwright, Cypress, Postman, and REST-assured tests",
+  "private": true,
+  "scripts": {
+    "test": "node test-generators.js",
+    "build:icon": "node store-assets/build-icon.js",
+    "lint": "echo 'No linter configured'"
+  },
+  "keywords": [
+    "chrome-extension",
+    "api-testing",
+    "playwright",
+    "cypress",
+    "postman",
+    "rest-assured",
+    "test-generation"
+  ],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "sharp": "^0.34.5"
+  }
+}

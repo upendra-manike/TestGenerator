@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>TestGenerator</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>TestGenerator</h1>
+      <p class="tagline">Capture API calls → Generate tests</p>
+    </header>
+
+    <section class="capture-section">
+      <div class="btn-group">
+        <button id="btnStart" type="button" class="btn btn-primary">Start capture</button>
+        <button id="btnStop" type="button" class="btn btn-secondary" disabled>Stop capture</button>
+      </div>
+      <p class="hint">Open a site, click Start, perform actions, then Stop and generate.</p>
+    </section>
+
+    <section class="requests-section">
+      <div class="section-header">
+        <h2>Captured requests</h2>
+        <button id="btnClear" type="button" class="btn btn-ghost">Clear</button>
+      </div>
+      <ul id="requestList" class="request-list"></ul>
+      <p id="emptyState" class="empty-state">No requests captured yet.</p>
+    </section>
+
+    <section class="export-section">
+      <h2>Generate</h2>
+      <div class="format-grid">
+        <button id="btnPlaywright" type="button" class="format-btn" data-format="playwright">Playwright</button>
+        <button id="btnCypress" type="button" class="format-btn" data-format="cypress">Cypress</button>
+        <button id="btnPostman" type="button" class="format-btn" data-format="postman">Postman</button>
+        <button id="btnRestAssured" type="button" class="format-btn" data-format="rest-assured">REST-assured</button>
+      </div>
+      <div id="exportResult" class="export-result hidden"></div>
+    </section>
+  </div>
+  <script src="logger.js"></script>
+  <script src="generators/playwright.js"></script>
+  <script src="generators/cypress.js"></script>
+  <script src="generators/postman.js"></script>
+  <script src="generators/rest-assured.js"></script>
+  <script src="popup.js"></script>
+</body>
+</html>

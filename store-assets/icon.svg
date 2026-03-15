@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="128" height="128" viewBox="0 0 128 128">
+  <!-- 16px transparent padding; icon content in center 96x96 (16 to 112) -->
+  <!-- Rounded rect background - works on light and dark (self-contained) -->
+  <rect x="16" y="16" width="96" height="96" rx="20" fill="#2563eb"/>
+  <!-- Play/record circle (left) -->
+  <circle cx="48" cy="64" r="14" fill="white" opacity="0.95"/>
+  <circle cx="48" cy="64" r="8" fill="#2563eb"/>
+  <!-- Arrow to right -->
+  <path d="M62 56 L78 64 L62 72 Z" fill="white" opacity="0.95"/>
+  <!-- Code brace (right side) -->
+  <path d="M88 44 L96 64 L88 84 M96 52 L104 64 L96 76" stroke="white" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" fill="none" opacity="0.95"/>
+</svg>
